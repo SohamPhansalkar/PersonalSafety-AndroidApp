@@ -26,6 +26,7 @@ An Android emergency alert application that sends your live **GPS location** to 
 > 🏠 **Home Screen**
 >
 > ![Home Screen](home.jpeg)
+> <img src="home.jpeg" width="300px" />
 
 > 📒 **Emergency Info / Saved Numbers Screen**
 >
