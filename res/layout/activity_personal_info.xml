@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Now all your views go here, one after another -->
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="#4CAF50"
+            android:padding="16dp" />
+
+        <!-- Full Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Gender Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+
+        <!-- Gender Radio Group -->
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Boy" />
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Girl"
+                android:layout_marginStart="16dp" />
+        </RadioGroup>
+
+        <!-- Birth Date -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Birth Date (dd/mm/yyyy)"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Blood Group -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bloodGroupLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bloodGroupInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Blood Group (e.g., A+)" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Emergency Contacts Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginTop="32dp" />
+
+        <!-- Contact 1–5 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact1Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact 1"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Repeat for contact 2–5 and make sure each has a unique ID -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact2Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact 2"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Contact 3 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact3Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact 3"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Contact 4 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact4Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact4Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact 4"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Contact 5 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contact5Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contact5Input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Contact 5"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Information"
+            android:textColor="@android:color/white"
+            android:background="@color/design_default_color_primary"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

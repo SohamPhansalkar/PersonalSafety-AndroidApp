@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#ECEFF1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar / Title Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:title="Important Numbers"
+        android:titleTextColor="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp" />
+
+    <!-- Buttons -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:divider="?android:attr/dividerHorizontal"
+            android:showDividers="middle"
+            android:dividerPadding="8dp">
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop/Decline"
+                android:backgroundTint="#f44336"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/instantCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Instant Call"
+                android:backgroundTint="#4CAF50"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/thirtySec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call in 30 secs"
+                android:backgroundTint="#35A893"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/oneMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call in 1 min"
+                android:backgroundTint="#FF9800"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/twoMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call in 2 mins"
+                android:backgroundTint="#9C27B0"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/tenMin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Call in 10 mins"
+                android:backgroundTint="#3F51B5"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/stop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stop/Decline"
+                android:backgroundTint="#f44336"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
