@@ -25,12 +25,11 @@ An Android emergency alert application that sends your live **GPS location** to 
 
 > 🏠 **Home Screen**
 >
-> ![Home Screen](home.jpeg)
 > <img src="home.jpeg" width="300px" />
 
 > 📒 **Emergency Info / Saved Numbers Screen**
->
-> ![Emergency Info Screen](ImpCalls.jpeg)
+> 
+><img src="ImpCalls.jpeg" width="300px" />
 
 ### 📦 Prerequisites
 
